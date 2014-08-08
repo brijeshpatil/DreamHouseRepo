@@ -1,0 +1,203 @@
+	...LAYOUT.............
+	...HEADER.............
+	...FOOTER.............
+	...CONTENT............
+	...WIDGETS............
+	...LISTING............
+	...SLIDER.............
+	...FORMS..............
+	...MISC...............
+	...MEDIA QUERIES......
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	LAYOUT
+/*-----------------------------------------------------------------------------------*/
+
+body {color:#333;background:#f2f2f2;font-size:13px;line-height:20px;padding-top:5px;}
+body:after {content:"";position:absolute;top:0;left:0;width:100%;height:5px;background-image:url(images/mosaic.png);}
+* {margin:0;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+
+header:after, #wrapper:after, .listing a:after, .listing:after, .listing-nav:after, .footer:after, #form-newsletter:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+:focus {outline:0;}
+
+header {background:#e6e6e6;text-align:center;}
+#wrapper {padding:40px 15px 0 15px;}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	CONTENT
+/*-----------------------------------------------------------------------------------*/
+
+/* default margins */
+p, blockquote, ul, ol, table, dl, pre, for {margin-bottom:20px;}
+
+/* headers */
+h1, h2, h3, h4 {font-weight:400;line-height:1.2;}
+h1 {font-size:26px;margin-bottom:20px;border-bottom:4px double #ddd;padding-bottom:10px;font-weight:700;}
+h1 small {font-size:inherit;color:#666;font-weight:normal;}
+h2 {font-size:18px;margin:0 0 10px;}
+h2 a {text-decoration:none;color:#666;}
+h2.highlight {text-align:center;margin-bottom:30px;}
+h3 {font-size:16px;margin:0 0 5px 0;text-transform:uppercase;}
+.footer h3 {background:url(images/line-horizontal.png) 0 100% repeat-x;padding-bottom:10px;margin-bottom:15px;}
+h4 {font-size:14px;margin:0 0 5px 0;}
+
+/* ingress */
+.ingress {font-size:18px;line-height:24px;}
+
+/* news date */
+.meta {font-size:13px;color:#999;margin:-5px 0 10px 0;}
+
+/* horizontal ruler */
+hr {border:0;height:40px;margin:20px 0 0 0;border-top:4px double #ddd;background:transparent;clear:both;}
+
+/* lists */
+ul {list-style:square;}
+
+/* links */
+a:hover {color:#333;}
+
+/* images */
+img {max-width:100%;height:auto;border:0;}
+p img {float:left;margin:0 10px 10px 0;}
+p img.right {float:right;margin:0 0 10px 10px;}
+/*-----------------------------------------------------------------------------------*/
+/*	LISTING
+/*-----------------------------------------------------------------------------------*/
+
+/* listing nav */
+.listing-nav {margin-bottom:25px;}
+.listing-nav li {display:inline;font-size:11px;text-transform:uppercase;color:#666;margin-right:5px;}
+.listing-nav li:first-child {margin-right:10px;}
+.listing-nav a {text-decoration:none;background:#ccc url(images/sprite.png) 0 -200px;padding:0 10px;text-indent:-9999px;width:40px;line-height:30px;display:inline-block;}
+.listing-nav a.listing-full {background-position:-40px -200px;}
+
+/* listing */
+.listing {margin-bottom:-5px;}
+.listing li {margin-bottom:25px;list-style:none;}
+.listing.listing-full li.one_half {clear:both;width:100%;}
+.listing.listing-full li p {margin-bottom:10px;}
+
+.listing a {font-weight:bold;text-decoration:none;display:block;background:#fafafa;padding:10px 10px 0 10px;position:relative;}
+.listing a:hover {background:#fff;}
+.listing a:hover h3 span {background:#fff;}
+.listing h3 {text-transform:none;background:url(images/line-horizontal.png) 0 50% repeat-x;}
+.listing h3 span {background:#fafafa;padding-right:5px;}
+
+/* featured listing */
+.featured {position:absolute;top:-2px;right:-2px;background:url(images/featured.png) no-repeat;width:120px;height:60px;text-indent:-9999px;}
+
+/* price tags */
+.price {display:inline-block;margin-bottom:20px;}
+.listing .price {margin-bottom:6px;}
+[class^="char"] {font-size:18px;line-height:1.2;display:inline-block;background-image:url(images/price.png);background-position:0 50%;background-repeat:repeat-x;color:#fff;margin-right:1px;text-align:center;position:relative;padding:0 3px;font-weight:700;font-style:normal;width:1em;}
+[class^="char"]:after {content:"";background:url(images/price.png) 0 50% repeat-x;position:absolute;top:0;left:0;width:100%;height:100%;}
+.listing [class^="char"] {font-size:14px;}
+
+/* listing content */
+.listing img {margin:0 0 5px 0;}
+.listing.listing-full img {float:right;margin:0 0 10px 10px;}
+.listing p {font-weight:normal;font-style:normal;color:#333;font-size:13px;line-height:16px;display:none;}
+.listing-full p {display:block;}
+.listing-full h3 {clear:both;}
+
+/* listing info */
+.listing-info {margin:0 0 10px 0;}
+.listing-full .listing-info {margin:0 0 5px 0;}
+.listing-info li {display:inline;color:#333;font-weight:normal;padding-left:16px;background-position:0 50%;background-repeat:no-repeat;font-size:13px;margin-right:8px;}
+.listing-info li.listing-info-beds {background-image:url(images/listing-info-beds.png);}
+.listing-info li.listing-info-baths {background-image:url(images/listing-info-baths.png);}
+.listing-info li.listing-info-area {background-image:url(images/listing-info-area.png);}
+
+/* pages navigation */
+.pages {clear:both;}
+.pages li {display:inline-block;margin-right:4px;list-style:none;color:#999;}
+.pages a {background:#ddd;color:#999;text-decoration:none;padding:0 4px;font-weight:normal;}
+.pages a:hover {background:#ccc;}
+
+/* features  */
+.features li {display:inline-block;margin:8px 10px 0 0;padding:0 8px;text-decoration:none;text-transform:uppercase;color:#fff;font-size:11px;}
+
+@media screen and (min-width: 235px) {
+	
+	/* search */
+	.search .one_half {float:left;display:inline;width:48%;margin:0 4% 0 0;}
+	.search .one_half.last {margin-right:0;}
+	
+}
+
+@media screen and (min-width: 500px) {
+
+	/* layout */
+	#wrapper, footer, .footer-inner, .header-inner, .testimonial blockquote {width:460px;margin:0 auto;}
+	#wrapper {padding:40px 0 0 0;}
+	#home #wrapper {position:relative;margin-top:-140px;}
+	#home header {padding-bottom:140px;}
+	.footer-inner {padding:30px 0 10px 0;}
+	.testimonial {padding:30px 15px 30px 15px;}
+	
+	/* slider */
+	#slider {margin:0 0 15px 0;}
+	#home #slider {margin:0;}
+	
+	/* navigation */
+	#nav-toggle {border-radius:3px 3px 0 0;}
+	#nav a {border-radius:3px;}
+	
+	/* search */
+	#home .search {border-radius:0 0 3px 3px;margin:0 0 30px 0;}
+	.search {border-radius:3px;margin:0 0 30px 0;}
+	
+	/* typography */
+	h2 {font-size:22px;}
+	h2.highlight {background:url(images/line-horizontal.png) 0 50% repeat-x;text-align:center;margin-bottom:30px;}
+	h2.highlight span {background:#F0F0F0;padding:0 15px;}
+	
+}
+
+
+@media screen and (min-width: 820px) {
+	
+	
+	/* listing */
+	.listing.listing-full a {padding:20px 20px 10px 20px;}
+	.listing.listing-full h3 {background:none;clear:none;}
+	
+	/* basic grid system */
+	.one_half, .one_third, .two_thirds, .one_fourth, .three_fourths, .search .one_half {float:left;display:inline;width:48%;margin:0 4% 0 0;}
+	.one_third {width:30.666666%;}
+	.two_thirds {width:65.333333%;}
+	.one_fourth {width:22%;}
+	.three_fourths {width:74%;}
+	.last, .search .one_half.last {margin-right:0;}
+	.clear {clear:both;}
+	
+}
+
+@media screen and (min-width: 1080px) {
+
+	/* layout */
+	#wrapper, heade, footer, .footer-inner, .header-inner, .testimonial blockquote  {width:1020px;}
+	.testimonial {margin:40px 0 0 0;}
+	.footer-inner {padding:50px 0 30px 0;}
+	footer {padding:40px 0 80px 0;}	
+
+	/* typography */
+	h1 {font-size:44px;}
+	
+	/* slider */
+	#property #slider {width:100%;}
+	#property .rslides {width:100%;}	
+	#property .next, #property .prev {left:980px;}
+	#property .prev {left:945px;}	
+	.next, .prev {left:710px;bottom:10px;}
+	.prev {left:670px;}
+	
+	/* price tags */
+	[class^="char"] {font-size:24px;}
+	.listing [class^="char"] {font-size:16px;}	
+	
+}

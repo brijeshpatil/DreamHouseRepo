@@ -1,0 +1,201 @@
+/* Stylesheet / CSS */
+
+/* CSS Reset - Do not edit this line */
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+:focus
+{
+    outline: 0;
+}
+
+
+/* General Styles
+----------------------------------------------------------------------------------------------------*/
+#h2
+{
+    text-align:center;
+    font-size:30px;
+    text-shadow: 3px 3px #06b9f1;
+    color:Black;    
+}
+
+#wrapper
+{
+    padding: 0px 0 0 0px;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    width: 26%;
+    margin: auto;
+    position: relative;
+    transition: all 1s ease;
+    -moz-box-shadow: 5px 10px 50px 7px rgb(69,58,75);
+    box-shadow: 5px 10px 50px 7px rgb(69,58,75);
+
+}
+#wrapper:hover
+{
+	box-shadow:0 0 0 5px silver;
+	-moz-box-shadow: 26px 13px 50px #756869; 
+	box-shadow: 26px 13px 50px #756869;
+}
+
+
+#wrappertop
+{
+    
+    background-color:Black;
+    height: 23px;
+}
+
+#wrappermiddle
+{
+    
+    background-color:cadetblue;
+    height: 435px;
+}
+
+#wrapperbottom
+{
+    
+    background-color:Black;
+    height: 25px;
+}
+
+#wrapper h2
+{
+    height:50%;
+    width:50%;
+    text-align:center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Myriad Pro;
+    text-transform: uppercase;
+    position: absolute;
+    text-shadow: #fff 2px 2px 2px;
+}
+#inputusername
+{
+    margin-left: 9%;
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    margin-top: 5%;
+}
+
+#inputpassword
+{
+    margin-left: 9%;
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    margin-top: 27%;
+}
+
+#submit
+{
+    float: left;
+    position: relative;
+    padding: 0;
+    margin-top: 48%;
+    margin-left: 9%;
+    width: 130%;
+    height: 40px;
+    border: 0;
+}
+
+.submit1
+{
+    position: absolute;
+    z-index: 10;
+    border: 0;
+}
+
+.submit2
+{
+    position: absolute;
+    margin-top: 0px;
+    border: 0;
+}
+
+#links_left
+{
+    float: left;
+    position: relative;
+    padding-top: 0px;
+    margin-left: 22%;
+}
+
+#links_left a
+{
+    color: #f3f2f8;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -webkit-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+}
+
+#links_left a:hover
+{
+    color: Yellow;
+}
+/*
+#links_right
+{
+    float: right;
+    position: relative;
+    padding-top: 5px;
+    margin-right: 25px;
+}
+
+#links_right a
+{
+    color: #bbb;
+    font-size: 11px;
+    text-decoration: none;
+    transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -webkit-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+}
+
+#links_right a:hover
+{
+    color: #292929;
+}
+
+#powered
+{
+    float: right;
+    position: relative;
+    padding-top: 3px;
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+#powered a
+{
+    color: #aaa;
+    font-size: 11px;
+    text-decoration: none;
+    transition: color 0.5s linear;
+    -moz-transition: color 0.5s linear;
+    -webkit-transition: color 0.5s linear;
+    -o-transition: color 0.5s linear;
+}
+
+#powered a:hover
+{
+    color: #292929;
+}
+*/

@@ -1,0 +1,213 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Admin_Admin, App_Web_wkdu0uos" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Dream House </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../css/adminstyle.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+    <form runat="server">
+    <div class="header">
+        <div class="header_top">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="#">
+                        <img src="../images/logo.png" alt="" /></a>
+                </div>
+                <div class="menu">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <!-- Menu Content Place Holder -->
+                        Menu
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <!-- Slider Content Place Holder -->
+            Slider
+        </asp:ContentPlaceHolder>
+    </div>
+    <div style="background-color: Silver; height: auto; text-align: right; vertical-align: middle">
+        <div style="margin-right: 73px">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/guests.png" Height="50px"
+                Width="50px" ImageAlign="Middle" />&nbsp;&nbsp;<span>WelCome Admin&nbsp;&nbsp;
+                    <asp:LinkButton ID="LinkButton6" runat="server" 
+                onclick="LinkButton6_Click">Logout</asp:LinkButton></span>
+        </div>
+    </div>
+ 
+    <div>
+        <div align="center">
+            <div class="imgmenu">
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">
+                                <img src="../images/manageUser.png" alt="Manage User" style="width: 70%" /></asp:LinkButton>
+                <p>
+                    Manage Users,<br /> Agents</p>
+            </div>
+            <div class="imgmenu">
+                <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click">
+                    <img src="../images/ManageProperty.png" alt="Manage Property Type" style="width: 70%" /></asp:LinkButton>
+                <p>
+                    Manage Property<br />
+                    Type</p>
+            </div>
+            <div class="imgmenu">
+                <asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click">
+                    <img src="../images/classifieds.png" alt="Manage Property Ads" style="width: 70%" /></asp:LinkButton>
+                <p>
+                    Manage Property<br />
+                    Ads, Plan</p>
+            </div>
+            <div class="imgmenu">
+                <asp:LinkButton ID="LinkButton7" runat="server" onclick="LinkButton7_Click">
+                    <img src="../images/maps.png" alt="Manage Country,State,City" style="width: 70%" /></asp:LinkButton>
+                <p>
+                    Manage Country<br /> State, City</p>
+            </div>
+            <div class="imgmenu">
+                <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click">
+                    <img src="../images/MAIL.png" alt="Feedback" style="width: 70%" /></asp:LinkButton>
+                <p>
+                    Feedback</p>
+            </div>
+            <div class="imgmenu">
+                <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click">
+                    <img src="../images/changepassword.png" alt="Change Password" style="width: 70%" /></asp:LinkButton>
+                <p>
+                    Change Password</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrap">
+            <div class="services_grid">
+                <div class="content_bottom">
+                    <div class="section group service_desc">
+                        
+                        <asp:MultiView ID="MultiView1" runat="server">
+                            <asp:View ID="View1" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                    <!--    Content ..... -->
+                                    View1 Content.....
+                                </asp:ContentPlaceHolder>
+                            </asp:View>
+                            <asp:View ID="View2" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                                    <!--    Content ..... -->
+                                    View2 Content.....
+                                </asp:ContentPlaceHolder>
+                            </asp:View>
+                            <asp:View ID="View3" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+                                    <!--    Content ..... -->
+                                    View3 Content.....
+                                </asp:ContentPlaceHolder>
+                            </asp:View>
+                            <asp:View ID="View4" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder6" runat="server">
+                                    <!--    Content ..... -->
+                                    View4 Content.....
+                                </asp:ContentPlaceHolder>
+                            </asp:View>
+                            <asp:View ID="View5" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder7" runat="server">
+                                    <!--    Content ..... -->
+                                    View5 Content.....
+                                </asp:ContentPlaceHolder>
+                            </asp:View>
+                            <asp:View ID="View6" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder8" runat="server">
+                                <!--    Content ..... -->
+                                    View6 Content.....
+                                </asp:ContentPlaceHolder>
+                            </asp:View>
+                        </asp:MultiView>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="section group">
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="location">
+                        <h3>
+                            Location</h3>
+                        <ul>
+                            <li>
+                                <img src="../images/footer_logo.png" alt="" /></li>
+                            <li>1-22-003-55,</li>
+                            <li>Neque porro quisquam,</li>
+                            <li>dolor sit amet,</li>
+                            <li>USA.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <h3>
+                        Information</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo
+                        consequat.<br>
+                        <span><a href="#">Read More[....]</a></span></p>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <h3>
+                        Testimonials</h3>
+                    <div class="Testimonials_desc">
+                        <p>
+                            <span class="up">
+                                <img src="../images/quotes.png" alt=""></span>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.<span class="down"><img src="../images/quotes-down.png" alt=""></span></p>
+                        <h5>
+                            - Lorem ipsum dolor</h5>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <h3>
+                        Contact Us</h3>
+                    <ul class="address">
+                        <li>info(at)yourcompany.com</li>
+                        <li><span>Mobile :</span> +12 345 67890</li>
+                        <li><span>Telephone :</span> +00 000 00000</li>
+                        <li><span>Fax :</span> +00 000 00000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="wrap">
+                <p>
+                    Develope by <a href="#">DreamHouse</a></p>
+                <div align='center'>
+                    <a>
+                        <!-- BEGIN: Powered by Supercounters.com -->
+                        <script type="text/javascript" src="http://widget.supercounters.com/hit.js"></script>
+                        <script type="text/javascript">
+                            sc_hit(766758, 15, 7);
+                        </script>
+                        <!-- END: Powered by Supercounters.com -->
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

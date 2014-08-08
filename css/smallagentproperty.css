@@ -1,0 +1,210 @@
+﻿.body
+        {
+            font-family: "Helvetica Neue" , Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+        }
+        .body
+        {
+            -webkit-font-smoothing: antialiased;
+            color: #707070;
+            font-family: "Open Sans" , "Arial" ,sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        
+        
+        div
+        {
+            display: block;
+        }
+        
+        .widget
+        {
+            margin-bottom: 5px;
+        }
+        
+        .widget.our-agents .h2
+        {
+            color: #022a3b;
+            font-size: 24px;
+            font-weight: lighter;
+            margin: 20px 0px;
+        }
+        
+        .widget.our-agents .h2
+        {
+            display: block;
+            font-size: 1.5em;
+            -webkit-margin-before: 0.83em;
+            -webkit-margin-after: 0.83em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+        
+        .widget.our-agents .agent:last-child
+        {
+            margin-bottom: 0px;
+        }
+        .widget.our-agents .agent
+        {
+            -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+            box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+            background-color: #fff;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+        }
+        
+        .widget.our-agents .agent .image
+        {
+            float: left;
+            margin-right: 8px;
+            width: 70px;
+        }
+        
+        .widget.our-agents .agent .image .img
+        {
+            width: 70px;
+        }
+        .body .img
+        {
+            
+            height: auto;
+            max-width: 100%;
+            vertical-align: middle;
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+        }
+        
+        .widget.our-agents .agent .name
+        {
+            color: #313131;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        
+        .widget.our-agents .agent .email, .widget.our-agents .agent .phone
+        {
+            font-size: 12px;
+        }
+        
+        .widget.our-agents .agent .email, .widget.our-agents .agent .phone
+        {
+            font-size: 12px;
+        }
+        
+        .body .a
+        {
+            -webkit-transition: color 0.1s ease-in;
+            -moz-transition: color 0.1s ease-in;
+            -o-transition: color 0.1s ease-in;
+            transition: color 0.1s ease-in;
+            color: #06a7ea;
+        }
+        .body .a
+        {
+            color: #0088cc;
+            text-decoration: none;
+        }
+        .widget.properties .content1 .property
+        {
+            display: inline-block;
+            zoom: 1;
+            -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+            box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+            background-color: #fff;
+            display: block;
+            margin-bottom: 15px;
+        }
+        
+        
+        .widget.properties .content1 .property:after
+        {
+            height: 0;
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+        }
+        
+        
+        .image1
+        {
+            float: left;
+            margin-right: 10px;
+            position: relative;
+            width: 100px;
+        }
+        
+        .widget.properties .content1 .property
+        {
+            zoom: 1;
+        }
+        
+        
+        .widget.properties .content1 .property .image1 .a
+        {
+            -webkit-transition: background-color 0.2s ease-in;
+            -moz-transition: background-color 0.2s ease-in;
+            -o-transition: background-color 0.2s ease-in;
+            transition: background-color 0.2s ease-in;
+            background-color: rgba(0,0,0,0);
+            display: block;
+            height: 100%;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 100%;
+        }
+        
+        
+        .widget.properties .content1 .property .wrapper
+        {
+            padding: 4px 0px;
+        }
+        
+        .widget.properties .content1 .property .title .h3
+        {
+            line-height: 1;
+            margin: 0px;
+        }
+        .widget.properties .h3
+        {
+            color: #022a3b;
+            font-weight: normal;
+        }
+        user agent stylesheeth3
+        {
+            display: block;
+            font-size: 1.17em;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
+        
+        .widget.properties .content1 .property .title
+        {
+            margin-bottom: 7px;
+            margin-top: 5px;
+        }
+        
+        .widget.properties .content1 .property .location
+        {
+            font-size: 12px;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        
+        .widget.properties .content1 .property .price
+        {
+            color: #022a3b;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1;
+        }

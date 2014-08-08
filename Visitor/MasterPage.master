@@ -1,0 +1,324 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_eqtj4e4l" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Dream House </title>
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/modal.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        a
+        {
+            color: Blue;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+    </asp:ScriptManager>
+    <div class="header">
+        <div class="header_top">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="DreamHouse.aspx">
+                        <img src="../images/logo.png" alt="" /></a>
+                </div>
+                <div class="menu">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <!-- Menu Content Place Holder -->
+                        Menu
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            <!-- Slider Content Place Holder -->
+            Slider
+        </asp:ContentPlaceHolder>
+    </div>
+    <div style="background-color: Silver; height: auto; text-align: right; vertical-align: middle">
+        <div style="margin-right: 73px">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/guests.png" Height="50px"
+                Width="50px" ImageAlign="Middle" />&nbsp;&nbsp;<span>WelCome Guest&nbsp;&nbsp;
+                    <asp:HyperLink ID="login_pop" runat="server" NavigateUrl="#login_form">Login</asp:HyperLink></span>
+        </div>
+    </div>
+    <!-- popup form #1 -->
+    <asp:HyperLink runat="server" NavigateUrl="#x" class="overlay" ID="login_form"></asp:HyperLink>
+    <div class="popup">
+        <table>
+            <tr>
+                <td colspan="2" align="center">
+                    <h1 style="font-weight: bold">
+                        Welcome Guest!</h1>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <p>
+                        Please enter your login and password here</p>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Text="Login Id"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr style="margin-top: 5px;">
+                <td>
+                    <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox2" runat="server" TextMode="Password"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="Button1" runat="server" Text="Log In" OnClick="Button1_Click" CssClass="submit_button"
+                        Style="position: relative;" />
+                </td>
+                <td>
+                    <asp:HyperLink ID="join_pop" runat="server" NavigateUrl="#join_form">Forgot Password?</asp:HyperLink><br />
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Register.aspx">Not Registered?</asp:HyperLink>
+                    <a class="close" href="#close"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- popup form #2 -->
+    <a href="#x" class="overlay" id="join_form"></a>
+    <div class="popup">
+        <center>
+            <table>
+                <tr>
+                    <td align="center">
+                        <h1 style="font-weight: bold">
+                            Forgot Password</h1>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <p>
+                            Please enter your details here</p>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+        <asp:Panel ID="Panel1" runat="server">
+            <table>
+                <tr>
+                    <td>
+                        <asp:Label ID="Label3" runat="server" Text="Your Email-Id"></asp:Label>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                <td colspan="3" align="center">
+                    <asp:Label ID="Label6" runat="server" Text="" ForeColor="Red" Visible="false"></asp:Label></td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <asp:Button ID="Button3" runat="server" Text="Submit" CssClass="submit_button" Style="position: relative;"
+                            OnClick="Button3_Click" />
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        <asp:Panel ID="Panel2" runat="server" Visible="false">
+            <table>
+                <tr>
+                    <td>
+                        <asp:Label ID="Label4" runat="server" Text="Your Seq Que"></asp:Label>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox4" runat="server" Width="170"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Label ID="Label5" runat="server" Text="Enter Ans"></asp:Label>
+                    </td>
+                    <td>
+                        &nbsp;
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox5" runat="server" Width="170"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <asp:Button ID="Button2" runat="server" Text="Submit" CssClass="submit_button" Style="position: relative"
+                            OnClick="Button2_Click" />
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel>
+        </ContentTemplate>
+        </asp:UpdatePanel>
+        
+        <table>
+            <tr>
+                <td>
+                    <a class="close" href="#close"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="main">
+        <div class="wrap">
+            <div class="services_grid">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    <!--    Content ..... -->
+                    Content.....
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="sidebar">
+                <div class="sidebar_right_top">
+                    <h3>
+                        Latest News</h3>
+                    <div class="latestnews">
+                        <div class="latestnews_desc">
+                            <h4>
+                                Jan 15, 2012</h4>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout.</p>
+                            <span><a href="#">read more</a></span>
+                        </div>
+                        <div class="latestnews_desc">
+                            <h4>
+                                Jan 20, 2013</h4>
+                            <p>
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout.</p>
+                            <span><a href="#">read more</a></span>
+                        </div>
+                        <div class="view-all">
+                            <a href="events.aspx">ViewAll</a></div>
+                    </div>
+                </div>
+                <div class="sidebar_right_bottom">
+                    <div class="projects">
+                        <h3>
+                            Projects</h3>
+                        <div class="project_img">
+                            <img src="../images/project1.jpg">
+                            <img src="../images/project2.jpg">
+                            <div class="view-all">
+                                <a href="#">See All</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <div class="section group">
+                <div class="col_1_of_4 span_1_of_4">
+                    <div class="location">
+                        <h3>
+                            Location</h3>
+                        <ul>
+                            <li>
+                                <img src="../images/footer_logo.png" alt="" /></li>
+                            <li>1-22-003-55,</li>
+                            <li>Neque porro quisquam,</li>
+                            <li>dolor sit amet,</li>
+                            <li>USA.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <h3>
+                        Information</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud nisi ut aliquip ex ea commodo
+                        consequat.<br />
+                        <span><a href="#">Read More[....]</a></span></p>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <h3>
+                        Testimonials</h3>
+                    <div class="Testimonials_desc">
+                        <p>
+                            <span class="up">
+                                <img src="../images/quotes.png" alt=""></span>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.<span class="down"><img src="../images/quotes-down.png" alt=""></span></p>
+                        <h5>
+                            - Lorem ipsum dolor</h5>
+                    </div>
+                </div>
+                <div class="col_1_of_4 span_1_of_4">
+                    <h3>
+                        Contact Us</h3>
+                    <ul class="address">
+                        <li>info(at)yourcompany.com</li>
+                        <li><span>Mobile :</span> +12 345 67890</li>
+                        <li><span>Telephone :</span> +00 000 00000</li>
+                        <li><span>Fax :</span> +00 000 00000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="wrap">
+                <p>
+                    Develope by <a href="DreamHouse.aspx">DreamHouse</a></p>
+                <div align='center'>
+                    <!-- BEGIN: Powered by Supercounters.com -->
+                    <script type="text/javascript" src="http://widget.supercounters.com/hit.js"></script>
+                    <script type="text/javascript">
+                        sc_hit(766758, 15, 7);
+                    </script>
+                    <!-- END: Powered by Supercounters.com -->
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
